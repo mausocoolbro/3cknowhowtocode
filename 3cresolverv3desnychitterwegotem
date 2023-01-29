@@ -11,21 +11,3 @@
  
  
  
- local useVelocity = function (player) 
-         player.Character.HumanoidRootPart.Velocity = Vector3.new(0.36, 0.21, 0.34) * 2
-     end
-
-     local checkVelocity = function (player, pos, neg)
-         if player and player.Character:FindFirstChild("Humanoid") then
-             local velocity = player.Character.HumanoidRootPart.Velocity
-             if (velocity.Magnitude > neg or velocity.Magnitude < pos and
-             (not player.Character.Humanoid.Jump == true)) then
-                 useVelocity(player)
-             end
-         end
-         return false
-     end
-
-     task.spawn(function () while task.wait() do if getgenv().derxdontlikeurskiddedassslock.Resolver.AutoResolve == true then checkVelocity(prey or prey2, getgenv().lenakidoesntlikeurskiddedassslock.Resolver.Positive, getgenv().lenakidoesntlikeurskiddedassslock.Resolver.Negative) end end end)
- 
- 
